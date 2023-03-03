@@ -31,8 +31,13 @@
 
 body {
     
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden; 
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -162,8 +167,8 @@ header {
     display: flex;
     justify-content: space-between;
     background: rgb(230, 230, 230);
-    padding-left: 5px;
-    padding-right: 15px;
+    /* padding-left: 5px;
+    padding-right: 15px; */
     /* opacity: 0.6; */
 }
 .primary-navigation {
