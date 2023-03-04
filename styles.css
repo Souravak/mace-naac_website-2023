@@ -1498,7 +1498,7 @@ h6 {
     background-image: url(./assets/images/heroiamge.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: fill;
     flex-wrap: wrap;    
 }
 
@@ -1517,9 +1517,9 @@ h6 {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    padding-bottom: 56.25%;
+    /* padding-bottom: 56.25%; */
     padding-top: 3px;
-    height: 100%;
+    /* height: 100%; */
     overflow: hidden;
 }
 
