@@ -22,24 +22,30 @@
 
     <!-- hero section -->
     <section id="hero">
-        <div>
+        <div class="hero-nav">
+            <div>
+                <button title = "nav-toggle" id="nav-toggle" aria-expanded="false"></button>
+                <ul class="primary-navigation sticky" data-visible = "false">
+                    <li class="nav-link active"><a href="./index.html">Home</a></li>
+                    <li class="nav-link about-sectionx`"><a href="./index.html#about-section">Overview</a></li>
+                    <li class="nav-link schedule-section"><a href="./index.html#schedule-section">TIMELINE</a></li>
+                    <li class="nav-link tracks-section"><a href="./index.html#tracks-section">Scope</a></li>
+                    <li class="nav-link speakers-section"><a href="./index.html#speakers-section">Speakers</a></li>
+                    <li class="nav-link committee"><a href="./committee.html">Committee</a></li>
+                    <li class="nav-link connect-section"><a href="./index.html#connect-section">Connect</a></li>
+                </ul>
+            </div>
             <header>
                 <div class="primary-logos">
+                    <div class="logo-pair">
+                        <div class="presentation"><h3>Presented by</h3><h1>MACE</h1></div>
+                        <img class="nav-logo logo-split" src="./assets/logos/macelogo.png" alt="">
+                    </div>
                     <img class="nav-logo logo-split" src="./assets/logos/60 yrs MACE.png" alt="">
-                    <img class="nav-logo logo-split" src="./assets/logos/macelogo.png" alt="">
-                    <img class="nav-logo logo-split" src="./assets/logos/leti-logo.png" alt="">
-                </div>
-                <div>
-                    <button title = "nav-toggle" id="nav-toggle" aria-expanded="false"></button>
-                    <ul class="primary-navigation" data-visible = "false">
-                        <li class="nav-link active"><a href="./index.html">Home</a></li>
-                        <li class="nav-link about-sectionx`"><a href="./index.html#about-section">Overview</a></li>
-                        <li class="nav-link schedule-section"><a href="./index.html#schedule-section">TIMELINE</a></li>
-                        <li class="nav-link tracks-section"><a href="./index.html#tracks-section">Scope</a></li>
-                        <li class="nav-link speakers-section"><a href="./index.html#speakers-section">Speakers</a></li>
-                        <li class="nav-link committee"><a href="./committee.html">Committee</a></li>
-                        <li class="nav-link connect-section"><a href="./index.html#connect-section">Connect</a></li>
-                    </ul>
+                    <div class="logo-pair">
+                        <div class="presentation"><h3>In association</h3><h1>LETI</h1></div>
+                        <img class="nav-logo logo-split" src="./assets/logos/leti-logo.png" alt="">
+                    </div>
                 </div>
             </header>
         </div>
@@ -51,29 +57,30 @@
                 <div class="hero-scroll-logo"><img src="./assets/logos/macelogo.png" alt=""></div>
                 <div class="hero-scroll-logo"><img src="./assets/logos/60 yrs MACE.png" alt=""></div>
             </div> -->
-            <div id="hero-cdandlogo">
-                <div id="hero-logo">
-                    <div id="event-heading">
-                        <!-- <div class="hero-non-scroll-logo"><img src="assets\logos\conferencelogo.png" alt=""></div> -->
-                        <h3>IC @ MACE 2023</h3>
-                    </div>
-                    <h3 id="hero-logo-content">International Colloquium on Advances in Engineering and Technology</h3>
-                    <h3 id="hero-logo-content" style="font-size: 2em;">Mar Athanasius College of Engineering <br> In <br> association with Julia Filippova</h3>
-                    <h3 id="hero-logo-event-date">16<sup>th</sup> & 17<sup>th</sup> June 2023</h3>
+            <div id="hero-logo">
+                <div id="event-heading">
+                    <!-- <div class="hero-non-scroll-logo"><img src="assets\logos\conferencelogo.png" alt=""></div> -->
+                    <h3>IC @ MACE 2023</h3>
                 </div>
+                <h3 id="hero-logo-content">International Colloquium on Advances in Engineering and Technology</h3>
+                <h3 id="hero-logo-content" style="font-size: 2em;">Mar Athanasius College of Engineering <br> In <br> association with Julia Filippova</h3>
+                <h3 id="hero-logo-event-date">16<sup>th</sup> & 17<sup>th</sup> June 2023</h3>
+            </div>
+
+            <div id="hero-cdandlogo">
                 <div id="countdown-timer">
                     <p id="days"><span id="days-value" class="time-value"></span><br><span class="time-format">DAYS</span></p>
                     <p id="hours"><span id="hours-value" class="time-value"></span><br><span class="time-format">HOURS</span></p>
                     <p id="mins"><span id="mins-value" class="time-value"></span><br><span class="time-format">MINS</span></p>
                     <p id="secs"><span id="secs-value" class="time-value"></span><br><span class="time-format">SECS</span></p>
                 </div>
-            </div>
-                <button  id="hero-button" type="button">Submit Your Paper</button>
+                <div>
+                    <button  id="hero-button" type="button">Submit Your Paper</button>
+                </div>
                 <!-- <button type="button" class="btn btn-primary">Submit Your Paper</button> -->
             </div>
-
-            
         </div>
+    </div>
 
 <!-- 
         <div id="hero-bg-video">
@@ -326,7 +333,7 @@
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     </section> 
-
+    <button onclick="topFunction()" id="gotoTop" title="Go to top">^</button>
     <footer>
         <div class="style-one">
             <hr>
