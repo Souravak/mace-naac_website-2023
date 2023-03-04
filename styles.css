@@ -32,8 +32,13 @@
 
 body {
     
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden; 
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -163,9 +168,10 @@ header {
     display: flex;
     justify-content: space-between;
     background: rgb(230, 230, 230);
-    padding-left: 5px;
-    padding-right: 15px;
+    /* padding-left: 5px;
+    padding-right: 15px; */
     /* opacity: 0.6; */
+    padding: 4px;
 }
 .primary-navigation {
     display: flex;
@@ -228,9 +234,9 @@ header {
 /* Hero Content */
 
 #hero-content {
-    position: absolute;
+    /* position: absolute; */
     margin-top: 5rem;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     padding: 2rem;
     flex-direction: column;
@@ -392,8 +398,11 @@ header {
 /* footer   */
 
 footer {
-    background-color: var(--echo-black);
+    /* background-color: var(--echo-black); */
     height: 260px;
+    background: linear-gradient(225deg, var(--additional-grad-end) 0%, var(--additional-grad) 100%);
+
+
 }
 
 footer>h3 {
@@ -878,7 +887,7 @@ h2 {
 }
 
 .grad-img {
-    background-image: url(./assets/images/abstract-image-of-blue-white-marbling.jpg);
+    background-image: url(./assets/images/heroimage2.jpg);
 }
 
 .grad {
@@ -950,7 +959,8 @@ h6 {
 /*new schedule*/
 .cardTop {
     width: 497px;
-    height: 284px;
+    /* height: 284px; */
+    height: 100%;
     background: linear-gradient(220deg ,var(--primary-color),var(--additional-grad-end));
     border-radius: 20px;
     display: flex;
@@ -1299,7 +1309,7 @@ h6 {
     place-items: center;
     row-gap: 3rem;
     column-gap: 2rem;
-
+    flex: 1;
 }
 
 
@@ -1318,12 +1328,12 @@ h6 {
     color: var(--primary-text-color);
     padding-bottom: 2rem;
     max-width: 21rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     text-align: center;
-
     border-top: 7px solid transparent;
     border-right: 7px solid transparent;
     background-image: linear-gradient(black, black), linear-gradient(var(--primary-color), var(--primary-grad-end));
@@ -1332,6 +1342,7 @@ h6 {
     background-clip: padding-box, border-box;
     box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
     transition: all 1.5s;
+
 }
 
 .speaker.hidden {
@@ -1354,6 +1365,7 @@ h6 {
 .speaker>img {
     object-fit: cover;
     width: 100%;
+
 }
 
 .speaker>p {
