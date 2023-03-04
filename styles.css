@@ -612,7 +612,7 @@ h2 {
 
 .about-box {
     width: 90vw;
-    height: 70vh;
+    /* height: 90vh; */
     display: flex;
     background: linear-gradient(225deg, var(--primary-color) 0%, var(--additional-grad-end) 100%);
     box-shadow: 0 8px 8px -4px var(--lighter-black);
@@ -663,10 +663,11 @@ h2 {
 }
 
 .about-text p {
+    /* max-height: 90vh; */
     font-size: 1.5rem;
     text-align: justify;
     margin-top: 2.5rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
 }
 
 /* About the Event */
