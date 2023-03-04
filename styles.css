@@ -953,7 +953,8 @@ h6 {
 /*new schedule*/
 .cardTop {
     width: 497px;
-    height: 284px;
+    /* height: 284px; */
+    height: 100%;
     background: linear-gradient(220deg ,var(--primary-color),var(--additional-grad-end));
     border-radius: 20px;
     display: flex;
