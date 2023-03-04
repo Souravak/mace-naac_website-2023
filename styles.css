@@ -429,7 +429,7 @@ a {
 }
 
 .wrap {
-    padding-top: 30px;
+    /* padding-top: 30px; */
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -1446,7 +1446,7 @@ h6 {
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 3px;
-    height: 0;
+    height: 100%;
     overflow: hidden;
 }
 
