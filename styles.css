@@ -132,6 +132,7 @@ body::-webkit-scrollbar {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    
 }
 
 #hero-bg-video {
@@ -224,11 +225,12 @@ header {
 
 .nav-link {
     list-style: none;
-    padding: 10px;
-    border-radius: 0.5rem;
+    margin-top: 0;
+    padding: 10px 20px;
+    /* border-radius: 0.5rem; */
 }
 .nav-link:hover{
-    background: rgb(49, 156, 161);
+    background: rgb(89, 69, 218);
     color: #000;
 }
 
@@ -256,7 +258,7 @@ header {
 
 #hero-content {
     /* position: absolute; */
-    margin-top: 12rem;
+    margin-top: 8rem;
     /* width: 100%; */
     display: flex;
     padding: 2rem;
@@ -269,7 +271,7 @@ header {
 /* For aligning the countdown and logo */
 #hero-cdandlogo {
     /* width: 50%; */
-    width: 632px;
+    /* width: 632px; */
     display: flex;
     /* flex-direction: column-reverse; */
     /* flex-direction: column; */
