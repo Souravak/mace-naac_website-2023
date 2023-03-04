@@ -27,11 +27,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 body {
-    
+    font-family: 'Montserrat', sans-serif;
     overflow: hidden; 
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -268,10 +269,13 @@ header {
 /* For aligning the countdown and logo */
 #hero-cdandlogo {
     /* width: 50%; */
+    width: 632px;
     display: flex;
+    /* flex-direction: column-reverse; */
     /* flex-direction: column; */
-     align-items: center;
+    align-items: center;
     margin-top: 0;
+    grid-gap: inherit;
     /* margin: auto?; */
     /* gap: 2rem; */
 }
@@ -333,7 +337,7 @@ header {
 
 #event-heading > h3 {
     font-size: 5rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     margin-top: 3rem;
     /* padding-top: 25%; */
@@ -395,7 +399,7 @@ header {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.5rem;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 1.5rem 2.5rem;
     color: var(--primary-text-color);
     border: var(--primary-text-color) 3px solid;
@@ -595,6 +599,9 @@ h2 {
 
 /*About College*/
 .about-2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -603,8 +610,9 @@ h2 {
 
 .about-box {
     width: 90vw;
+    height: 70vh;
     display: flex;
-    background-color: var(--primary-text-color);
+    background: linear-gradient(225deg, var(--primary-color) 0%, var(--additional-grad-end) 100%);
     box-shadow: 0 8px 8px -4px var(--lighter-black);
     margin: 2rem;
     margin-bottom: 4rem;
@@ -633,14 +641,22 @@ h2 {
 
 .about-text {
     padding: 1rem;
+    color: white;
+    line-height: 2rem;
+    font-family: 'Montserrat', sans-serif;
     padding-left: 2rem;
 
 }
 
-.about-text h1 {
+.about-text h1 , .sideytvdo h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900 !important;
     padding-bottom: 0.1rem;
-    border-bottom: solid var(--echo-black);
+    /* border-bottom: solid var(--echo-black); */
     width: max-content;
+    font-style: normal;
+    font-size: 3rem;
+    color: #FFFFFF;
 
 }
 
@@ -648,7 +664,7 @@ h2 {
     font-size: 1.5rem;
     text-align: justify;
     margin-top: 2.5rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
 }
 
 /* About the Event */
@@ -690,9 +706,9 @@ h2 {
 }
 
 .upper-heading-span {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 900;
     font-size: 5rem;
     line-height: 6rem;
     text-align: center;
@@ -706,12 +722,12 @@ h2 {
 }
 
 #about-content {
-    padding-left: 1rem;
     padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
     text-align: justify;
-    font-size: 18px;
+    font-size: 20px;
     color: white;
-    line-height: 31px;
+    line-height: 35px;
     transition: 0.5s all ease-in;
     border-left: 3px solid white;
 }
@@ -731,7 +747,7 @@ h2 {
         flex-direction: column;
     }
     #about-content {
-        font-family: Open Sans;
+        font-family: 'Montserrat', sans-serif;
         padding-left: 1rem;
         padding: 2rem;
         text-align: justify;
@@ -764,10 +780,10 @@ h2 {
 /* Tracks Section */
 
 #tracks-section {
-    background: var(--echo-black);
+    background: #167ac6;
     padding: 6rem 9rem;
-    margin: 4rem;
-    border-radius: 2rem;
+    /* margin: 4rem; */
+    /* border-radius: 1rem; */
 }
 
 @media screen and (max-width: 500px) {
@@ -778,9 +794,9 @@ h2 {
 
 #tracks-section>h3 {
     color: var(--primary-text-color);
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 5rem;
-    font-style: italic;
     text-align: left;
     margin-bottom: 2rem;
 }
@@ -788,6 +804,7 @@ h2 {
 #tracks-container {
     border: 1px solid white;
     display: grid;
+    border-radius: 5px;
     grid-template-rows: repeat(auto-fit, 1fr);
 }
 
@@ -913,9 +930,10 @@ h2 {
 }
 
 .grad-img {
-    background-image: url(./assets/images/heroimage2.jpg);
+    background-image: url(./assets/images/heroiamge.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .grad {
@@ -928,9 +946,7 @@ h2 {
 }
 
 .agenda-text h3 {
-
-
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 80px;
@@ -999,6 +1015,7 @@ h6 {
 }
 
 .timeline-parent {
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1052,9 +1069,9 @@ h6 {
 }
 
 .timeline h3 {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: bolder;
+    font-weight: 900;
     /* margin-left: 40px; */
     margin-top: 30px;
     font-size: 45px;
@@ -1111,21 +1128,24 @@ h6 {
     box-shadow: 0px 16px 15px -10px rgba(105, 96, 215, 0.0944602);
     margin-bottom: 10px;
     padding-bottom: 1rem;
-    transition: width 1s,  transform 1s;
-    transition-delay: 1s;
+    transition: width 0.2s,  transform 0.2s;
+    transition-delay: 0.2s;
     transform: translateY(-50%);
 
 
 }
 .box .card:hover{
-    width:105% ;
-    border: solid var(--lighter-black) 2px;
+    width:103% ;
+    border-right: #40dadd 4px solid;
 
+}
+.card>p:hover{
+    color: #107192 !important;
 }
 
 .box h4 {
 
-    font-family: Open Sans;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -1137,8 +1157,7 @@ h6 {
 }
 
 .box p {
-
-    font-family: Open Sans;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1195,7 +1214,7 @@ h6 {
 
 #agenda h2,
 .schedule h2 {
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 80px;
@@ -1267,7 +1286,7 @@ h6 {
 
 .schedule-box h1 {
     color: var(--primary-color);
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     font-size: x-large;
     margin-bottom: 2rem;
 
@@ -1334,6 +1353,7 @@ h6 {
 
 #speakers {
     display: grid;
+    border-radius: 5px;
     padding: 4rem;
     grid-template-columns: 1fr 1fr;
     place-items: center;
@@ -1342,14 +1362,24 @@ h6 {
     flex: 1;
 }
 
-
+.underline-titles{
+    text-decoration: underline;
+    width: 20%;
+    height: 5px;
+    border: var(--primary-grad-end);
+    
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    position: relative;
+}
 
 #speakers-heading {
     background-clip: texts;
+    font-family: 'Montserrat', sans-serif;
     -webkit-background-clip: text;
-    /* background-image: linear-gradient(180deg, var(--additional-grad) 0%, var(--additional-grad-end) 100%); */
     color: black;
-    font-size: 4rem;
+    font-weight: 700;
+    font-size: 5rem;
     text-align: center;
     margin: 3rem;
 }
@@ -1357,16 +1387,15 @@ h6 {
 .speaker {
     color: var(--primary-text-color);
     padding-bottom: 2rem;
-    max-width: 21rem;
+    max-width: 30rem;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
     text-align: center;
-    border-top: 7px solid transparent;
-    border-right: 7px solid transparent;
-    background-image: linear-gradient(black, black), linear-gradient(var(--primary-color), var(--primary-grad-end));
+    /* border-top: 7px solid transparent; */
+    /* border-right: 7px solid transparent; */
+    background: #2391f2;
     color: white;
     background-origin: border-box;
     background-clip: padding-box, border-box;
@@ -1386,14 +1415,16 @@ h6 {
 }
 
 .speaker:hover {
-    background-image: linear-gradient(black, black), linear-gradient(var(--primary-grad-end), var(--primary-color));
+    background: #1c94b5;
     transform: translateY(-4px);
     transition: transform ease-in-out .3s;
 }
 
 
 .speaker>img {
+    border-radius: 20px;
     object-fit: cover;
+    padding: 20px;
     width: 100%;
 
 }
@@ -1455,8 +1486,12 @@ h6 {
     display: flex;
     justify-content: space-between;
     height: 632px;
-    background-color: #137e9c;
-    flex-wrap: wrap;
+    /* background-color: #137e9c; */
+    background-image: url(./assets/images/heroiamge.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    flex-wrap: wrap;    
 }
 
 .contact-form {
