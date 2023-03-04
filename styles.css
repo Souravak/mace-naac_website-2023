@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@500&display=swap');
 
 :root {
     /* --primary-color : #FF6A00; */
@@ -258,6 +259,7 @@ header {
 
 #hero-logo-content {
     font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     /* color: white; */
     /* color: #67f1d5; */
@@ -304,6 +306,7 @@ header {
 
 #event-heading > h3 {
     font-size: 5rem;
+    font-family: 'Poppins', sans-serif;
     color: white;
     padding-top: 40px;
 }
@@ -362,14 +365,17 @@ header {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.5rem;
+    font-family:Arial, Helvetica, sans-serif;
     padding: 1.5rem 2.5rem;
     color: var(--primary-text-color);
     border: var(--primary-text-color) 3px solid;
     background: rgba(0, 0, 0, 0);
+    border-radius: 1rem;
 }
 
 #hero-button:hover {
-    border-image: linear-gradient(var(--primary-color), var(--primary-grad-end)) 30;
+    /* border-image: linear-gradient(var(--primary-color), var(--primary-grad-end)) 5; */
+    border: #6CFACD 3px solid;
 }
 
 
@@ -1734,3 +1740,8 @@ td {
 #registration-fee-table tr td {
     border: 1px solid black;
 }
+
+/* #mace{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+} */
