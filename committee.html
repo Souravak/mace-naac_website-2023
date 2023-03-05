@@ -22,28 +22,34 @@
         </div>
     </div>
 
-    <section id="hero"
-        style="height: 8rem; background: rgba(0, 0, 0, 0);">
-
-        <header>
-            <div class="primary-logos">
-                <img class="nav-logo logo-split" src="./assets/logos/60 yrs MACE.png" alt="">
-                <img class="nav-logo logo-split" src="./assets/logos/macelogo.png" alt="">
-                <img class="nav-logo logo-split" src="./assets/logos/leti-logo.png" alt="">
+    <section id="hero" style="height: 0rem;">
+        <div class="hero-nav">
+            <div>
+                <button title = "nav-toggle" id="nav-toggle" aria-expanded="false"></button>
+                <ul class="primary-navigation sticky" data-visible = "false">
+                    <li class="nav-link"><a href="./index.html">Home</a></li>
+                    <li class="nav-link about-sectionx`"><a href="./index.html#about-section">Overview</a></li>
+                    <li class="nav-link schedule-section"><a href="./index.html#schedule-section">TIMELINE</a></li>
+                    <li class="nav-link tracks-section"><a href="./index.html#tracks-section">Scope</a></li>
+                    <li class="nav-link speakers-section"><a href="./index.html#speakers-section">Speakers</a></li>
+                    <li class="nav-link committee active"><a href="./committee.html">Committee</a></li>
+                    <li class="nav-link connect-section"><a href="./index.html#connect-section">Connect</a></li>
+                </ul>
             </div>
-            <!-- <img class="nav-logo" src="./assets/logos/macelogo.png" alt=""> -->
-            <button title = "nav-toggle" id="nav-toggle" aria-expanded="false"></button>
-            <ul class="primary-navigation" data-visible = "false">
-                <li class="nav-link"><a href="./index.html">Home</a></li>
-                <li class="nav-link about-section"><a href="./index.html#about-section">Event Overview</a></li>
-                <li class="nav-link schedule-section"><a href="./index.html#schedule-section">Schedule</a></li>
-                <li class="nav-link tracks-section"><a href="./index.html#tracks-section">Scope</a></li>
-                <li class="nav-link speakers-section"><a href="./index.html#speakers-section">Speakers</a></li>
-                <li class="nav-link committee active"><a href="./committee.html">Committee</a></li>
-                <li class="nav-link connect-section"><a href="./index.html#connect-section">Connect</a></li>
-            </ul>
-            <!-- <img class="nav-logo" src="./assets/logos/60 yrs MACE.png" alt=""> -->
-        </header>
+            <header>
+                <div class="primary-logos">
+                    <div class="logo-pair">
+                        <div class="presentation"><h3>Presented by</h3><h1>MACE</h1></div>
+                        <img class="nav-logo logo-split" src="./assets/logos/macelogo.png" alt="">
+                    </div>
+                    <img class="nav-logo logo-split" src="./assets/logos/60 yrs MACE.png" alt="">
+                    <div class="logo-pair">
+                        <div class="presentation"><h3>In association</h3><h1>LETI</h1></div>
+                        <img class="nav-logo logo-split" src="./assets/logos/leti-logo.png" alt="">
+                    </div>
+                </div>
+            </header>
+        </div>
     </section>
 
     <section id="committee">
