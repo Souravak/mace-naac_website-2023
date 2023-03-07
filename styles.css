@@ -27,12 +27,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
 
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     overflow: hidden; 
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -637,7 +637,7 @@ h2 {
     display: flex;
     background: linear-gradient(225deg, var(--primary-color) 0%, var(--additional-grad-end) 100%);
     box-shadow: 0 8px 8px -4px var(--lighter-black);
-    margin: 2rem;
+    margin: 7rem;
     margin-bottom: 4rem;
     padding: 2rem;
     border-radius: 0.5rem;
