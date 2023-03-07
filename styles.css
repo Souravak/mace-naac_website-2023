@@ -1701,7 +1701,7 @@ textarea {
 /* Committee */
 
 #committee {
-    margin-top: 12rem;
+    /* margin-top: 12rem; */
     padding: 2rem;
     display: flex;
     flex-direction: column;
